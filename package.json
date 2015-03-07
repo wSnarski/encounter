@@ -1,0 +1,17 @@
+{
+  "name": "encounter",
+  "version": "0.0.0",
+  "description": "location based mobile chat",
+  "main": "encounter_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "wsnarski@carthage.edu",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.12.2"
+  }
+}
