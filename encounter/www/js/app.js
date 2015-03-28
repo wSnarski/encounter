@@ -20,7 +20,8 @@ angular.module('starter',
     templateUrl: 'views/chat.html'
   });
 }])
-.run(function($ionicPlatform) {
+.run(['$ionicPlatform', '$rootScope', '$state', function($ionicPlatform, $rootScope, $state) {
+  $state.go('home');
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -30,6 +31,5 @@ angular.module('starter',
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
-    $state.go('home');
   });
-})
+}])
